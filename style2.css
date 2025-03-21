@@ -1,0 +1,228 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Header Container */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section: Logo & Title */
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.logo {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 14px;
+    border-radius: 50%;
+}
+
+.dashboard-title h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.dashboard-title span {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Middle Section: Date & Tasks */
+.middle-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.date-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.date-text {
+    font-size: 20px;
+    text-align: left;
+}
+
+.task-button {
+    width: 200px;
+    height: 70px;
+    background-color: #E75B3A;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background 0.3s ease;
+}
+
+.task-button:hover {
+    background-color: #d1492f;
+}
+
+.calendar-icon {
+    font-size: 50px;
+}
+
+.task-button p{
+    font-size: 15px;
+}
+/* Right Section: Profile, Search, Help */
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.add-btn {
+    font-size: 20px;
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+
+.profile-info strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.profile-info p {
+    font-size: 12px;
+    margin: 0;
+    color: gray;
+}
+
+.profile-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-bar {
+    padding: 8px 14px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    outline: none;
+}
+
+.search-btn {
+    font-size: 18px;
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+
+/* Help Section */
+.help-section {
+    text-align: center;
+    display: flex;
+    
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+}   
+
+.help-section h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.father{
+    display: flex
+    ;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: flex-start;
+    
+}
+
+.help-input {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 50px;
+    padding: 5px;
+    width: auto;
+    color: #666;
+}
+
+.help-input::placeholder {
+    color: #bbb;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    
+}
+.mic-button{
+    width: 70px;
+    height: 70px;
+}
+
+.mic-button img {
+    width: 28px;
+    height: 28px;
+    opacity: 0.6;
+}
+
+.mic-button:hover {
+    transform: scale(1.1);
+}
+
+.mic-button img:hover {
+    opacity: 1;
+}
