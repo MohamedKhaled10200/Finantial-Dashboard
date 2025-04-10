@@ -6,7 +6,7 @@ function updateDate() {
     
     document.querySelector('.date h2').textContent = now.getDate();
     document.querySelector('.date-details').innerHTML = `
-        <p>${days[now.getDay()]},</p>
+        <p class="day">${days[now.getDay()]},</p>
         <p>${months[now.getMonth()]}</p>
     `;
 }

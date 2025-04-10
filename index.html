@@ -1,185 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Financial Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="dashboard-header">
+      <div class="top">
         <div class="header-left">
-            <button class="menu-button">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-            </button>
-            <div class="brand">
-                <div class="logo">N8</div>
-                <div class="brand-text">
-                    <h1>Financial</h1>
-                    <p>Dashboard</p>
-                </div>
+          <button class="menu-button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M3 12H21M3 6H21M3 18H21"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <div class="brand">
+            <div class="logo">N8</div>
+            <div class="brand-text">
+              <h1>Financial</h1>
+              <p>Dashboard</p>
             </div>
+          </div>
         </div>
         <div class="header-right">
-            <button class="add-button">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-            </button>
-            <div class="addProfile">
+          <button class="add-button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 5V19M5 12H19"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <div class="addProfile">
             <div class="search-bar">
-                <input type="text" placeholder="Start searching here...">
-                <button class="search-button">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                        <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </button>
+              <input type="text" placeholder="Start searching here..." />
+              <button class="search-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
             </div>
             <div class="user-profile">
-                <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Profile Picture">
-                <div class="user-info">
-                    <h3>Mohammed Khaled</h3>
-                    <p>Programmer</p>
-                </div>
+              <img
+                src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Profile Picture"
+              />
+              <div class="user-info">
+                <h3>Mohammed Khaled</h3>
+                <p>Programmer</p>
+              </div>
             </div>
-            </div>
+          </div>
         </div>
-    </header>
-    <main>
+      </div>
+      <main>
         <div class="concate">
-        <div class="date-section">
+          <div class="date-section">
             <div class="date">
-                <h2>19</h2>
-                <div class="date-details">
-                    <p>Tue,</p>
-                    <p>December</p>
-                </div>
+              <h2>19</h2>
+              <div class="date-details">
+                <p>Tue,</p>
+                <p>December</p>
+              </div>
             </div>
+            <div class="v-line"></div>
             <button class="tasks-button">
-                Show my Tasks
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-
+              Show my Tasks
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M9 18L15 12L9 6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
             </button>
-            <div class="calendar-btn">
-            <button class="calendar-btn" title="View Schedule">
+            <div class="calendar">
+              <button class="calendar-btn" title="View Schedule">
                 <i class="fas fa-calendar">📅</i>
+              </button>
+            </div>
+          </div>
+
+          <div class="assistant-prompt">
+            <div class="assistant-text">
+              <h2>Hey, Need help?👋</h2>
+              <p>Just ask me anything!</p>
+            </div>
+            <button class="voice-button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
             </button>
+          </div>
         </div>
-        </div>
-            
-            <div class="assistant-prompt">
-                <div class="assistant-text">
-                    <h2>Hey, Need help?👋</h2>
-                    <p>Just ask me anything!</p>
-                </div>
-                <button class="voice-button">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" stroke="currentColor" stroke-width="2"/>
-                        <path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        
-    </main>
+      </main>
+    </header>
     <div class="dashboard-content">
-        <!-- Financial Cards -->
-        <div class="financial-cards">
-            <div class="card visa-card">
-                <div class="card-header">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="visa-logo">
-                    <span class="direct-debit">Direct Debit <span class="arrow">▼</span></span>
-                </div>
-                <p class="card-label">Linked to main account</p>
-                <div class="card-number">•••• 2719</div>
-                <div class="card-actions">
-                    <button class="receive-btn">Receive</button>
-                    <button class="send-btn">Send</button>
-                </div>
-                <div class="monthly-fee">
-                    <span>Monthly regular fee</span>
-                    <span class="amount">$25.00</span>
-                </div>
-            </div>
-
-            <div class="card balance-card">
-                <div class="card-header">
-                    <span>Total income</span>
-                    <span class="period">Weekly ▼</span>
-                </div>
-                <div class="balance">$23,194.80</div>
-            </div>
-
-            <div class="card system-card">
-                <div class="system-lock">
-                    <span class="lock-icon">🔒</span>
-                    <span>System Lock</span>
-                </div>
-                <div class="days-info">
-                    <h3>13 Days</h3>
-                    <p>109 hours, 59 minutes</p>
-                    <div class="progress-dots">
-                        <span class="dot active"></span>
-                        <span class="dot active"></span>
-                        <span class="dot active"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>
-                </div>
-            </div>
+      <!-- Financial Cards -->
+      <div class="financial-cards">
+        <div class="card visa-card">
+          <div class="card-header">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
+              alt="Visa"
+              class="visa-logo"
+            />
+            <span class="direct-debit"
+              >Direct Debit <span class="arrow">▼</span></span
+            >
+          </div>
+          <p class="card-label">Linked to main account</p>
+          <div class="card-number">•••• 2719</div>
+          <div class="card-actions">
+            <button class="receive-btn">Receive</button>
+            <button class="send-btn">Send</button>
+          </div>
+          <div class="monthly-fee">
+            <span>Monthly regular fee</span>
+            <span class="amount">$25.00</span>
+          </div>
         </div>
 
-        <!-- Charts Section -->
-        <div class="charts-section">
-            <div class="annual-profits">
-                <div class="chart-header">
-                    <h3>Annual profits</h3>
-                    <select>
-                        <option>2023</option>
-                    </select>
-                </div>
-                <div class="circle-chart">
-                    <div class="circle c1">$14K</div>
-                    <div class="circle c2">$9.3K</div>
-                    <div class="circle c3">$6.8K</div>
-                    <div class="circle c4">$4K</div>
-                </div>
-            </div>
-
-            <div class="activity-manager">
-                <div class="activity-header">
-                    <h3>Activity manager</h3>
-                    <div class="activity-controls">
-                        <button class="filter-btn">Filters</button>
-                    </div>
-                </div>
-                <div class="search-activities">
-                    <input type="text" placeholder="Search in activities...">
-                    <div class="filters">
-                        <span>Team ▼</span>
-                        <span>Insights ▼</span>
-                        <span>Today ▼</span>
-                    </div>
-                </div>
-                <div class="business-plans">
-                    <div class="plan-header">
-                        <h4>Business plans</h4>
-                        <button class="more-btn">⋮</button>
-                    </div>
-                    <ul class="plan-list">
-                        <li>Bank loans</li>
-                        <li>Accounting</li>
-                        <li>HR management</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="card balance-card">
+          <div class="card-header">
+            <span>Total income</span>
+            <span class="period">Weekly ▼</span>
+          </div>
+          <div class="balance">$23,194.80</div>
         </div>
+
+        <div class="card system-card">
+          <div class="system-lock">
+            <span class="lock-icon">🔒</span>
+            <span>System Lock</span>
+          </div>
+          <div class="days-info">
+            <h3>13 Days</h3>
+            <p>109 hours, 59 minutes</p>
+            <div class="progress-dots">
+              <span class="dot active"></span>
+              <span class="dot active"></span>
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Charts Section -->
+      <div class="charts-section">
+        <div class="annual-profits">
+          <div class="chart-header">
+            <h3>Annual profits</h3>
+            <select>
+              <option>2023</option>
+            </select>
+          </div>
+          <div class="circle-chart">
+            <div class="circle c1">$14K</div>
+            <div class="circle c2">$9.3K</div>
+            <div class="circle c3">$6.8K</div>
+            <div class="circle c4">$4K</div>
+          </div>
+        </div>
+
+        <div class="activity-manager">
+          <div class="activity-header">
+            <h3>Activity manager</h3>
+            <div class="activity-controls">
+              <button class="filter-btn">Filters</button>
+            </div>
+          </div>
+          <div class="search-activities">
+            <input type="text" placeholder="Search in activities..." />
+            <div class="filters">
+              <span>Team ▼</span>
+              <span>Insights ▼</span>
+              <span>Today ▼</span>
+            </div>
+          </div>
+          <div class="business-plans">
+            <div class="plan-header">
+              <h4>Business plans</h4>
+              <button class="more-btn">⋮</button>
+            </div>
+            <ul class="plan-list">
+              <li>Bank loans</li>
+              <li>Accounting</li>
+              <li>HR management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
